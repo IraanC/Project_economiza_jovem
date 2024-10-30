@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(19, 115, 226, 0.37);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #3b71e6;
+    padding: 10px;
+}
+
+.logo img {
+    height: 40px; /* Ajuste a altura do logo */
+    margin-right: 20px; /* Espaço entre o logo e os links */
+}
+
+.menu-toggle {
+    display: none; /* Ocultar o botão em telas grandes */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Exibe os links por padrão em desktop */
+    flex-grow: 1; /* Permite que os links ocupem o espaço disponível */
+    justify-content: flex-end; /* Alinha os links à direita */
+}
+
+.nav-links li {
+    flex: 1;
+}
+
+.nav-links a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+}
+
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; 
+        margin-left: auto;/* Mostrar o botão em telas pequenas */
+    }
+
+    .nav-links {
+         /* Empurra os links para a direita */
+         display: none; /* Esconder os links por padrão em dispositivos móveis */
+        flex-direction: column; /* Exibir os links em coluna */
+        width: 100%;
+        background-color: #3b71e6;
+        position: absolute;
+        top: 60px; /* Abaixo da barra de navegação */
+        right:0; 
+    }
+
+    .nav-links.active {
+        display: flex; /* Mostrar os links quando ativo */
+    }
+
+    #about_us{
+        margin-top: 1%;
+    }
+}
+
+.content {
+    padding-top: 70px; /* Ajuste para o espaço da barra de navegação */
+}
