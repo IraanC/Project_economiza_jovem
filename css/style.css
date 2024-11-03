@@ -1,11 +1,25 @@
+/* Estilo desktop */
 body {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
     font-family: Arial, sans-serif;
-    background-color: rgba(19, 115, 226, 0.37);
+
+
 }
 
+main{
+    width:98%;
+    /* background-color: #3b71e6; */
+    align-items: center;
+    margin: 1%;
+}
+
+
+/* Caracteristicas do header e da barra fixa */
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -54,8 +68,90 @@ header {
 }
 
 .nav-links a:hover {
-    background-color: #575757;
+    background-color: #f7f0f02a;
 }
+
+.content {
+    padding-top: 70px; /* Ajuste para o espaço da barra de navegação */
+}
+/* fim Fix Bar */
+
+
+/* Definição das caracteristicas da noticias sobre bets */
+.Conteiner_news{
+    text-align: center;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 10;
+    
+  
+}
+
+.slide img {
+    height: 5%;  
+    width: 96%;
+    justify-content: center;
+}
+.slide {
+    display: none;
+}
+.slide.active {
+    display: block;
+}
+.text-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.text-box {
+    flex: 1;
+    margin: 10 px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.text-box:hover {
+    background-color: #f0f0f0;
+}
+.text-box.active {
+    background-color: #172ad1b4; /* Cor de fundo para o slide ativo */
+    color: white; /* Cor do texto para contraste */
+}
+/* fim da sect da bets */
+
+
+/* Menssage of welcome */
+.user-welcome{
+  margin-top: 2%;
+  text-align: center;
+  background-color: #3b71e6;
+}
+
+.user-welcome h1{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+/* end menssage welcome */
+
+
+#Topic{
+    margin-top: 2%;
+    text-align: center;
+}
+
+.topics-level{
+    display: flex; /* Using flexbox for layout */
+    justify-content: space-between; /* Space elements evenly */
+    margin-top: 2%; /* Space above the boxes */
+    align-items: center; /* Aligns items vertically */
+    gap: 15px; /* Adds space between flex items */
+}
+
 
 /* Estilo para telas menores */
 @media (max-width: 768px) {
@@ -69,7 +165,7 @@ header {
          display: none; /* Esconder os links por padrão em dispositivos móveis */
         flex-direction: column; /* Exibir os links em coluna */
         width: 100%;
-        background-color: #3b71e6;
+        background-color: #789be9;
         position: absolute;
         top: 60px; /* Abaixo da barra de navegação */
         right:0; 
@@ -82,8 +178,4 @@ header {
     #about_us{
         margin-top: 1%;
     }
-}
-
-.content {
-    padding-top: 70px; /* Ajuste para o espaço da barra de navegação */
 }

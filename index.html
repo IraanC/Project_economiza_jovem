@@ -23,11 +23,59 @@
             </button>
             <ul class="nav-links">
                 
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Aulas">Aulas</a></li>
+                <li><a href="#Ebooks">Ebooks</a></li>
             </ul>
         </nav>
-    </header>   <script src="js/script.js"></script>
+    </header> 
+
+    <main>
+        <!-- Sect contém as noticias sobre as bets, a proposta e alternar entre as noticias automaticamente -->
+        <section class="Conteiner_news">
+            <div class="slide active">
+                <h1>Slide 1</h1>
+                <img src="img/Tumb.jpg" alt="Imagem do Slide 1">
+                <p>Bem-vindo à apresentação!</p>
+            </div>
+            <div class="slide">
+                <h1>Slide 2</h1>
+                <img src="img/peoples.jpg" alt="Imagem do Slide 2">
+                <p>Conteúdo do segundo slide.</p>
+            </div>
+            <div class="slide">
+                <h1>Slide 3</h1>
+                <img src="img/Tumb.jpg" alt="Imagem do Slide 3">
+                <p>Conteúdo do terceiro slide.</p>
+            </div>
+        
+            <div class="text-boxes">
+                <div class="text-box" onclick="showSlide(0)">Slide 1</div>
+                <div class="text-box" onclick="showSlide(1)">Slide 2</div>
+                <div class="text-box" onclick="showSlide(2)">Slide 3</div>
+            </div>
+        </section>
+
+        <!-- sect para a mensagem de boas vindas para os usuários  -->
+        <section class="user-welcome">
+            <h1>Bem-vindo</h1>
+            <p>Obrigado por acessar a nosso site queremos <br> te ajudar da melhor maneira</p>
+        </section>
+
+        <!-- Sect etapas -->
+         <h1 id="Topic">Etapas</h1>
+        <section class="topics-level">
+            
+            <dir class="topics">Etapa 1
+                <br> <img src="" alt="">
+            </dir>
+            <dir class="topics">Cosolidação</dir>
+            <dir class="topics">Etapa 2</dir>
+            <dir class="topics">Consolidação</dir>
+        </section>
+    </main>    
+    
+  
+    <script src="js/script.js"></script>
 </body>
 </html>
