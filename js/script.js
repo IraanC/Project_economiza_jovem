@@ -36,6 +36,6 @@ function nextSlide() {
 // Exibir o slide inicial
 showSlide(currentSlide);
 
-// Muda automaticamente os slides a cada 3 segundos
-setInterval(nextSlide, 3000);
+// Muda automaticamente os slides a cada 5 segundos
+setInterval(nextSlide, 5000);
 // fim do cod da animação //
