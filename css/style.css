@@ -69,7 +69,6 @@ header {
 }
 /* fim Fix Bar */
 
-
 /* Definição das caracteristicas da noticias sobre bets */
 .Conteiner_news{
     display: flex;
@@ -80,8 +79,8 @@ header {
 }
 
 .slide img {
-    height: 5%;  
-    width: 60%;
+    height: 5%;  /* <-- tamanho das imagens do Slide */
+    width: 60%;  /* <-- tamanho das imagens do Slide */
     justify-content: center;
 }
 .slide {
@@ -121,12 +120,16 @@ header {
     width: auto;
     padding: 1rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 24px;
+    font-weight: bold;
+    font-family:'Arial';
     background-color: #639C8B;
 }
 
 .user-welcome h1{
-    font-size: 2rem;
+    font-size: 40px;
+    font-weight: bold;
+    font-family:'Arial';
     padding-bottom: 1rem;
 }
 /* end menssage welcome */
