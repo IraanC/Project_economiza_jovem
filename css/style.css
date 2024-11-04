@@ -11,15 +11,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-main{
-
-}
-
-/* Caracteristicas do header e da barra fixa */
-header {
-
-}
-
 .navbar {
     display: flex;
     align-items: center;
