@@ -1,12 +1,3 @@
-// animação da barra de menus do mobile
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-// fim animação mob //
-
 let currentIndex = 0;
 
 function showSlide(index) {
@@ -38,3 +29,12 @@ function prevSlide() {
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentIndex);
 });
+
+// animação da barra de menus do mobile
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+// fim animação mob //
