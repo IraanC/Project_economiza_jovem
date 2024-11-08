@@ -67,13 +67,25 @@ nav ul li a {
 }
 
 .hero {
+    margin-top: 5px;
     background-image: url("backgroud/Back.png");
     background-repeat: repeat;
     text-align: center;
-    /* padding: 40px 20px; */
+    padding: 40px 20px;
     background-color: #f4f4f4;
-    width: 100%;
+    width: 1600px;
     height: 500px;;
+}
+
+#shadow{
+    margin-top: -40px;
+    width: 500px;
+    height: 119%;
+    background-color: black;
+    opacity: 50%;
+    position: relative;
+    justify-content: left;
+    margin-left: -20px;
 }
 
 img {
