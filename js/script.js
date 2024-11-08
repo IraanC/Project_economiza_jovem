@@ -30,6 +30,20 @@ document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentIndex);
 });
 
+/* script.js */
+
+document.addEventListener('DOMContentLoaded', function() {
+    const questions = document.querySelectorAll('.question h3');
+
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+});
+
+
 // animação da barra de menus do mobile
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
