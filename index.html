@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECONOMIZA JOVEM</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -24,8 +24,20 @@
     </header>
 
     <!-- Seção de Introdução -->
-    <section class="hero">
-        <img src="/img/man-using-desktop-computer-1970801.jpg" alt="Pessoa olhando para um quadro de avisos">
+    <section class="carousel"> 
+        <div class="carousel-inner"> 
+            <figure class="carousel-item active"> 
+                <img src="imagem1.jpg" alt="Imagem 1"> 
+            </figure> 
+            <figure class="carousel-item"> 
+                <img src="imagem2.jpg" alt="Imagem 2"> 
+            </figure> 
+            <figure class="carousel-item"> 
+                <img src="imagem3.jpg" alt="Imagem 3"> 
+            </figure> 
+        </div> 
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button> 
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
         <h1>Acesse nossos Cursos de Educação Financeira</h1>
     </section>
 
@@ -40,6 +52,9 @@
         <h2>Quem somos?</h2>
         <div class="content">
             <!-- Conteúdo sobre quem somos -->
+             <p>O projeto <b>Pé de Meia: Educação Financeira para Jovens</b> tem como principal objetivo oferecer aos beneficiários do programa de incentivo e permanência no ensino médio ferramentas essenciais para a gestão do seu dinheiro. Sabemos que, ao ingressar no mercado de trabalho ou receber recursos financeiros, muitos jovens enfrentam desafios relacionados ao consumo impulsivo, endividamento e falta de planejamento. Dessa forma, buscamos educar os participantes sobre a importância do controle financeiro, ajudando-os a tomar decisões mais conscientes e responsáveis, tanto para evitar dívidas que não podem ser pagas, quanto para se protegerem de compras desnecessárias ou superficiais.
+
+                Por meio de atividades práticas e teóricas, o projeto visa ensinar habilidades de planejamento financeiro, como poupança, orçamentação, controle de gastos e investimento, preparando os jovens para um futuro financeiro mais saudável e equilibrado. Nosso objetivo é contribuir para o desenvolvimento de uma mentalidade financeira sólida, que possa ser aplicada tanto no presente quanto no futuro, garantindo a independência e a segurança financeira dos participantes ao longo da vida.</p>
         </div>
     </section>
 
@@ -71,5 +86,6 @@
     <footer>
         <p>2024 © ECONOMIZA JOVEM</p>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
