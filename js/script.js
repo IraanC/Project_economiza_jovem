@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
+setInterval(nextSlide, 5000); // Muda de slide automaticamente a cada 3 segundos
 
 // animação da barra de menus do mobile
 const menuToggle = document.querySelector('.menu-toggle');
