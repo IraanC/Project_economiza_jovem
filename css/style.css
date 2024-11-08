@@ -1,10 +1,12 @@
 /* styles.css */
-
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
 }
 
 header {
@@ -64,6 +66,7 @@ nav ul li a {
     
 }
 
+<<<<<<< HEAD
 .carousel { 
     position: relative; 
     width: 80%; 
@@ -71,6 +74,16 @@ nav ul li a {
     overflow: hidden; 
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+=======
+.hero {
+    background-image: url("backgroud/Back.png");
+    background-repeat: repeat;
+    text-align: center;
+    /* padding: 40px 20px; */
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 500px;;
+>>>>>>> 6ae0d1574c6241cb4751431025b57b4c64037b49
 }
 
 .carousel-inner { 
