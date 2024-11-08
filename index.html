@@ -1,76 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Economiza Jovem</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- o link que segue adiciona o icone no topo da pagina no navegador-->
-    <link rel="shortcut icon" href="img/image.png" type="image/x-icon"> 
+    <title>ECONOMIZA JOVEM</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <!-- Cabeçalho -->
     <header>
-        <nav class="navbar">
-            <div class="logo" >
-                <a href="index.html">
-                    <img src="./img/Frame 2.png" alt="Logo da Empresa">
-                </a>
-            </div>
-            <button class="menu-toggle" aria-label="Abrir menu">
-                &#9776; <!-- Ícone de hambúrguer -->
-            </button>
-            <ul class="nav-links"> 
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#Aulas">Aulas</a></li>
-                <li><a href="#Ebooks">Ebooks</a></li>
-            </ul>
-        </nav>
-    </header> 
+        <div class="logo">ECONOMIZA JOVEM</div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Entrar</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li class="sobre"><a href="#">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>  
+    </header>
 
-    <main>
-        <!-- Sect contém as noticias sobre as bets, a proposta e alternar entre as noticias automaticamente -->
-        <section class="Conteiner_news">
-            <div class="slide active">
-                <h1>Slide 1</h1>
-                <img src="img/Tumb.jpg" alt="Imagem do Slide 1">
-                <p>Bem-vindo à apresentação!</p>
-            </div>
-            <div class="slide">
-                <h1>Slide 2</h1>
-                <img src="img/peoples.jpg" alt="Imagem do Slide 2">
-                <p>Conteúdo do segundo slide.</p>
-            </div>
-            <div class="slide">
-                <h1>Slide 3</h1>
-                <img src="img/Tumb.jpg" alt="Imagem do Slide 3">
-                <p>Conteúdo do terceiro slide.</p>
-            </div>
-        
-            <div class="text-boxes">
-                <div class="text-box" onclick="showSlide(0)">Slide 1</div>
-                <div class="text-box" onclick="showSlide(1)">Slide 2</div>
-                <div class="text-box" onclick="showSlide(2)">Slide 3</div>
-            </div>
-        </section>
+    <!-- Seção de Introdução -->
+    <section class="hero">
+        <img src="/img/man-using-desktop-computer-1970801.jpg" alt="Pessoa olhando para um quadro de avisos">
+        <h1>Acesse nossos Cursos de Educação Financeira</h1>
+    </section>
 
-        <!-- sect para a mensagem de boas vindas para os usuários  -->
-        <section class="user-welcome">
-            <hr style="border: solid 1px; width: 30%;margin-left: 35%;">
-            <h1>Bem-vindo!</h1>
-            <p>Obrigado por acessar a nosso site<br>queremos te ajudar da melhor maneira.</p>
-        </section>
+    <!-- Seção de Boas-Vindas -->
+    <section class="welcome">
+        <h2>Bem-vindo!</h2>
+        <p>Muito obrigado por acessar a nossa plataforma, queremos te auxiliar da melhor maneira.</p>
+    </section>
 
-        <!-- Sect etapas -->
-         <h1 id="Topic">Etapas</h1>
-        <section class="topics-level">
+    <!-- Seção Quem Somos -->
+    <section class="about-us">
+        <h2>Quem somos?</h2>
+        <div class="content">
+            <!-- Conteúdo sobre quem somos -->
+        </div>
+    </section>
 
-            <div class="topics">Etapa 1</div>
-            <div class="topics">Cosolidação</div>
-            <div class="topics">Etapa 2</div>
-            <div class="topics">Consolidação</div>
-        </section>
-    </main>
-    <script src="js/script.js"></script>
+    <!-- Seção Idealizadores -->
+    <section class="founders">
+        <h2>Idealizadores</h2>
+        <div class="profiles">
+            <!-- Ícones de perfil -->
+        </div>
+    </section>
+
+    <!-- Seção FAQ -->
+    <section class="faq">
+        <h2>Perguntas frequentes:</h2>
+        <div class="question">
+            <h3>Exemplo de Pergunta</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Alique illo esse cumque porro quod perspiciatis dolorum delectus! Adipisci aliquam velit voluptatibus quasi tempore quas, fugiat cupiditate repellat ea.</p>
+        </div>
+        <div class="question">
+            <h3>Exemplo de Pergunta</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Alique illo esse cumque porro quod perspiciatis dolorum delectus! Adipisci aliquam velit voluptatibus quasi tempore quas, fugiat cupiditate repellat ea.</p>
+        </div>
+        <div class="question">
+            <h3>Exemplo de Pergunta</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Alique illo esse cumque porro quod perspiciatis dolorum delectus! Adipisci aliquam velit voluptatibus quasi tempore quas, fugiat cupiditate repellat ea.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>2024 © ECONOMIZA JOVEM</p>
+    </footer>
 </body>
 </html>

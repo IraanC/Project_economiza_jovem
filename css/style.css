@@ -1,170 +1,97 @@
-*{
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo desktop */
-body {
-    width: 100%;
-    align-items: center;
-    font-family: Arial, sans-serif;
-}
-
-.navbar {
+header {
+    background-color: #00bfa5;
     display: flex;
-    align-items: center;
-    background-color: #639C8B;
-    padding: 1% 5% 0% 5%;
+    flex-wrap: wrap;
 }
 
-.logo img {
-    height: 40px; /* Ajuste a altura do logo */
-    margin-right: 20px; /* Espaço entre o logo e os links */
-}
-
-.menu-toggle {
-    display: none; /* Ocultar o botão em telas grandes */
-    background: none;
-    border: none;
-    color: white;
+.logo {
+    color: rgb(255, 255, 255);
+    background-color: #00bfa5;
     font-size: 24px;
-    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    padding: 20px 48px 0px 48px;
+    margin-bottom: 20px;
 }
 
-.nav-links {
-    list-style-type: none;
-    display: flex; /* Exibe os links por padrão em desktop */
-    flex-grow: 1; /* Permite que os links ocupem o espaço disponível */
-    justify-content: flex-end; /* Alinha os links à direita */
+.nav {
+    background-color: #03828B;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 48px 10px 48px;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    padding-top: 20px;
 }
 
-.nav-links li {
-    flex: 1;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0;
 }
 
-.nav-links a {
-    display: block;
+nav ul li {
+    margin: 0px 40px;
+    text-align: center;    
+}
+
+nav ul li a {
     color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
-.nav-links a:hover {
-    background-color: #f7f0f02a;
-}
-
-.content {
-    padding-top: 70px; /* Ajuste para o espaço da barra de navegação */
-}
-/* fim Fix Bar */
-
-/* Definição das caracteristicas da noticias sobre bets */
-.Conteiner_news{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 1% 0% 0% 1%;
-    width: 98%;
-}
-
-.slide img {
-    height: 5%;  /* <-- tamanho das imagens do Slide */
-    width: 60%;  /* <-- tamanho das imagens do Slide */
-    justify-content: center;
-}
-.slide {
-    background-color: #639c8b;
-    display: none;
-}
-.slide.active {
-    display: block;
-}
-.text-boxes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 20px 0px 20px 0px;
-    justify-content: space-between;
-}
-.text-box {
-    flex: 0.3;
-    padding: 8px;
-    border: 1px solid #ccc;
-    text-align: center;
-    justify-content: center;
+.sobre {
+    background-color: #03828B;
+    color: black;
+    border: solid;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.5s;
+    border-radius: 20px;
+    position: relative;
+    left: 80%;
+    
 }
-.text-box:hover {
-    background-color: #f0f0f0;
-}
-.text-box.active {
-    background-color: #639C8B; /* Cor de fundo para o slide ativo */
-    color: white; /* Cor do texto para contraste */
-}
-/* fim da sect da bets */
 
-/* Menssage of welcome */
-.user-welcome{
-    width: auto;
-    padding: 1rem;
+.hero {
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    font-family:'Arial';
-    background-color: #639C8B;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
 }
 
-.user-welcome h1{
-    font-size: 40px;
-    font-weight: bold;
-    font-family:'Arial';
-    padding-bottom: 1rem;
+img {
+    width: 100%;
+    height: 500px;
 }
-/* end menssage welcome */
 
+.welcome{
+    background-color: #00bfa5;
+}
 
-#Topic{
-    margin-top: 2%;
+.welcome, .about-us, .founders, .faq {
+    padding: 20px;
+}
+
+.faq .question {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #00bfa5;
+    color: white;
     text-align: center;
+    padding: 10px 0;
 }
-
-.topics-level{
-    display: flex;
-    flex-direction: column;
-    margin-top: 2%; 
-    align-items: center; 
-    gap: 0.5rem;
-}
-
-/* Estilo para telas menores */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; 
-        margin-left: auto;/* Mostrar o botão em telas pequenas */
-    }
-
-    .nav-links {
-         /* Empurra os links para a direita */
-         display: none; /* Esconder os links por padrão em dispositivos móveis */
-        flex-direction: column; /* Exibir os links em coluna */
-        width: 100%;
-        background-color: #639C8B;
-        position: absolute;
-        top: 60px; /* Abaixo da barra de navegação */
-        right:0; 
-    }
-
-    .nav-links.active {
-        display: flex; /* Mostrar os links quando ativo */
-    }
-
-    #about_us{
-        margin-top: 1%;
-    }
-}
-
-/* ----------------------------------------------------------- */
-
