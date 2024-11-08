@@ -1,69 +1,96 @@
-/* styles.css */
+@import url(https://db.onlinewebfonts.com/c/840c587995af767e3b9cd09ab83f946d?family=Font+Awesome+6+Brands+Regular);
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
-    background-color: #00bfa5;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem 3rem 0rem 3rem;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #649D8C;
+    gap: 1rem;
+
+    & h1{
+        width: 100%;
+        color: black;
+        font-family: "Font Awesome 6 Brands Regular";
+        font-size: 24px;
+        align-content: center;
+    }
 }
 
-.logo {
-    color: rgb(255, 255, 255);
-    background-color: #00bfa5;
-    font-size: 24px;
-    font-weight: bold;
-    width: 100%;
-    padding: 20px 48px 0px 48px;
-    margin-bottom: 20px;
-}
-
-.nav {
-    background-color: #03828B;
+nav {
     display: flex;
-    justify-content: space-between;
-    padding: 10px 48px 10px 48px;
+    background-color: #528072;
+    /* background: linear-gradient(0deg, #649D8C 0%, rgba(82,128,114,1) 90%, rgba(100,157,140,1) 100%); */
+    padding: 0rem 3rem 0rem 3rem;
     width: 100%;
-    margin: 0;
+    height: 4rem;
     align-items: center;
-    padding-top: 20px;
+    position: sticky;
+    top: 0px;
+
+    & ul{
+        display: flex;
+        width: 100%;
+        gap:1rem;
+        flex-direction: row;
+        list-style: none;
+
+        & li{
+            text-align: center;
+            align-content: center;
+
+            & a{
+                position: relative;
+                padding: 0.5rem 1rem;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-    padding: 0;
+.paginas{
+    border-bottom: 2px solid #649D8C;
+    transition: 0.2s ease-out;
+    overflow: hidden;
 }
 
-nav ul li {
-    margin: 0px 40px;
-    text-align: center;    
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.sobre {
-    background-color: #03828B;
-    color: black;
-    border: solid;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 20px;
+.paginas:hover{
     position: relative;
-    left: 80%;
-    
+    background-color: #649D8C;
+    transition: 0.2s ease-in;
+    border-radius: 0.2rem;
+    top:2px
+}
+
+#sobre {
+    border: 2px solid white;
+    padding: 0.5rem 0.5rem;
+    margin-left: auto;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#sobre:hover{
+    position: relative;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5);
+    background-color: #649D8C;
+    color: black;
+    top: 2px;
+}
+
+body {
+    background-color: #F4F0EA;
 }
 
 #backgroud{
