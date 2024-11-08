@@ -17,32 +17,29 @@
     <nav>
         <ul>
             <li class="paginas"><a href="#">Início</a></li>
-            <li class="paginas"><a href="#">Entrar</a></li>
+            <li class="paginas"><a href="#">Cursos</a></li>
             <li class="paginas"><a href="#">Contato</a></li>
-            <li class="paginas"><a href="#">FAQ</a></li>
+            <li class="paginas"><a href="#faq">FAQ</a></li>
             <li id="sobre"><a href="#">Sobre Nós</a></li>
         </ul>
     </nav>
     <main>
-    <!-- Seção de Introdução -->
-    <section>
-        <img src="css/backgroud/Back.png" alt="backgroud"  id="backgroud">
+        <!-- <img src="css/backgroud/Back.png" alt="backgroud"  id="backgroud"> -->
         <section class="carousel"> 
             <div class="carousel-inner"> 
-                <figure class="carousel-item active">
+                <div class="carousel-item active">
                     <img src="./img/adolescentes-com-livros-didaticos-na-rua_23-2147656226.avif" alt="Imagem 1"> 
-                </figure> 
-                <figure class="carousel-item"> 
+                </div> 
+                <div class="carousel-item"> 
                     <img src="./img/grupo-multietnico-de-jovens-estudantes-alegres-em-pe-ao-ar-livre_171337-11818.jpg" alt="Imagem 2"> 
-                </figure> 
-                <figure class="carousel-item"> 
-                    <img src="./img/man-using-desktop-computer-1970801.jpg" alt="Imagem 3"> 
-                </figure> 
-            </div> 
+                </div> 
+                <div class="carousel-item"> 
+                    <img src="./img/man-using-desktop-computer-1970801.jpg" alt="Imagem 3">
+                </div> 
+            </div>
             <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button> 
             <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
         </section>
-    </section>
 
     <!-- Seção de Boas-Vindas -->
     <section class="welcome">
@@ -52,8 +49,11 @@
 
     <!-- Seção Quem Somos -->
     <section class="about-us">
+        <div>
         <h2>Quem somos?</h2>
-        <div class="content">
+        <hr>
+        </div>
+        <div>
             <!-- Conteúdo sobre quem somos -->
              <p>O projeto <b>Pé de Meia: Educação Financeira para Jovens</b> tem como principal objetivo oferecer aos beneficiários do programa de incentivo e permanência no ensino médio ferramentas essenciais para a gestão do seu dinheiro. Sabemos que, ao ingressar no mercado de trabalho ou receber recursos financeiros, muitos jovens enfrentam desafios relacionados ao consumo impulsivo, endividamento e falta de planejamento. Dessa forma, buscamos educar os participantes sobre a importância do controle financeiro, ajudando-os a tomar decisões mais conscientes e responsáveis, tanto para evitar dívidas que não podem ser pagas, quanto para se protegerem de compras desnecessárias ou superficiais. <br>Por meio de atividades práticas e teóricas, o projeto visa ensinar habilidades de planejamento financeiro, como poupança, orçamentação, controle de gastos e investimento, preparando os jovens para um futuro financeiro mais saudável e equilibrado. Nosso objetivo é contribuir para o desenvolvimento de uma mentalidade financeira sólida, que possa ser aplicada tanto no presente quanto no futuro, garantindo a independência e a segurança financeira dos participantes ao longo da vida.</p>
         </div>
@@ -61,14 +61,24 @@
 
     <!-- Seção Idealizadores -->
     <section class="founders">
+        <div id="titulo">
         <h2>Idealizadores</h2>
+        <hr>
+        </div>
         <div class="profiles">
-            <!-- Ícones de perfil -->
+            <i class="fa-solid fa-circle fa-4x" style="color: lightgray;"></i>
+            <i class="fa-solid fa-circle fa-4x" style="color: lightgray;"></i>
+            <i class="fa-solid fa-circle fa-4x" style="color: lightgray;"></i>
+            <i class="fa-solid fa-circle fa-4x" style="color: lightgray;"></i>
+            <i class="fa-solid fa-circle fa-4x" style="color: lightgray;"></i>
+            <i class="fa-solid fa-circle fa-4x" style="color: lightgray;"></i>
+            <i class="fa-solid fa-circle fa-4x" style="color: lightgray;"></i>
+            <i class="fa-solid fa-circle fa-4x" style="color: lightgray;"></i>
         </div>
     </section>
 
     <!-- Seção FAQ -->
-    <section class="faq">
+    <section id="faq" class="faq">
          <h2>Perguntas Frequentes</h2> 
          <div class="question"> 
             <h3>O que é o Economiza Jovem?</h3>
@@ -83,6 +93,7 @@
             <p>Aprender sobre educação financeira ajuda a tomar decisões melhores sobre como gastar, poupar e investir seu dinheiro.</p> 
         </div> 
     </section>
+
     </main>
     <footer>
         <p>2024 © ECONOMIZA JOVEM</p>
