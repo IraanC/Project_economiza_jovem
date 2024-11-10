@@ -245,3 +245,45 @@ footer {
     color: white;
     text-align: center;
 }
+
+/* ----------------------------------- */
+/* cursos.html */
+
+.cursos{
+    gap:5rem;
+    background-color: #F4F0EA;
+
+    & .titulo_cursos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 3vh 3rem 0rem 3rem;
+
+        & h1{
+        font-size: 2rem;
+        }
+
+        & hr{
+            width: 30%;
+            border: 2px solid #649D8C;
+        }
+    }
+
+    & .imagem_curso{
+        display: flex;
+        margin: 0rem 3rem 0rem 3rem;
+        align-items: center;
+        justify-content: center;
+
+        & img{
+            width: 60%;
+        }
+
+        & .professora{
+            width: 100%;
+
+        }
+    }
+}
