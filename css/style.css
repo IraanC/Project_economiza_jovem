@@ -10,6 +10,13 @@
 
 body {
     background-color: #F4F0EA;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -64,6 +71,10 @@ nav {
     }
 }
 
+.index{
+    gap: 2.5rem;
+}
+
 .paginas{
     border-bottom: 2px solid #649D8C;
     transition: 0.2s ease-out;
@@ -92,12 +103,6 @@ nav {
     background-color: #649D8C;
     color: black;
     top: 2px;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
 }
 
 .carousel {
@@ -187,6 +192,7 @@ main{
 .founders{
     display: flex;
     flex-direction: column;
+    width: 100%;
     padding: 0rem 3rem 0rem 3rem;
     gap:2rem;
 
@@ -200,6 +206,22 @@ main{
         & hr{
             width: 30%;
             border: 2px solid #649D8C;
+        }
+    }
+
+    & #profiles{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        & a{
+            cursor: pointer;
+
+            & img {
+                width: 96px;
+                border-radius: 50%;
+            }
         }
     }
 
@@ -250,16 +272,13 @@ footer {
 /* cursos.html */
 
 .cursos{
-    gap:5rem;
-    background-color: #F4F0EA;
 
     & .titulo_cursos{
         display: flex;
         flex-direction: column;
         width: 100%;
-        justify-content: center;
         align-items: center;
-        padding: 3vh 3rem 0rem 3rem;
+        padding: 1rem 0rem 1rem 0rem;
 
         & h1{
         font-size: 2rem;
@@ -271,18 +290,92 @@ footer {
         }
     }
 
-    & .imagem_curso{
+    & .imagem_cursos{
         display: flex;
-        margin: 0rem 3rem 0rem 3rem;
-        align-items: center;
-        justify-content: center;
+        position: relative;
+        width: 100%;
+        left: 21%;
 
         & img{
             width: 60%;
         }
 
-        & .professora{
-            width: 100%;
+        & .nome_curso{
+            display: flex;
+            width: 58%;
+            position: absolute;
+            bottom: 2.5em;
+            left: 1%;
         }
+
+        & .elementos_imagem{
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+            width: 58%;
+            bottom: 0.2em;
+            left: 1%;
+
+            & .elementos{
+                display: flex;
+                gap: 5px;
+                align-items: center;
+
+                & p{
+                    font-weight: 500;
+                }
+
+                & #foto_professora{
+                    width: 32px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .descricao_cursos{
+        display: flex;
+        flex-direction: column;
+        margin: 0% 19% 0% 21%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        gap: 1rem;
+
+        & h2{
+        align-items: center;
+        }
+
+        & hr{
+        border: 2px solid #649D8C;
+        }
+
+        & p{
+            text-align: justify;
+        }
+
+        & .botao_acessar{
+            display: flex;
+            position: relative;
+            width: 100%;
+
+            & #acessar {
+                border: 2px solid #649D8C;
+                color: #649D8C;
+                text-decoration: none;
+                padding: 0.5rem;
+                align-items: center;
+                justify-items: center;
+                justify-content: center;
+                cursor: pointer;
+                border-radius: 8px;
+            }
+            
+            & #acessar:hover{
+                background-color: #649D8C;
+                color: white;
+                box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5); 
+            }
+        }
+        
     }
 }
