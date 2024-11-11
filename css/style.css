@@ -304,7 +304,7 @@ footer {
             display: flex;
             width: 58%;
             position: absolute;
-            bottom: 2.5em;
+            bottom: 3em;
             left: 1%;
         }
 
@@ -313,7 +313,7 @@ footer {
             position: absolute;
             justify-content: space-between;
             width: 58%;
-            bottom: 0.2em;
+            bottom: 0.5em;
             left: 1%;
 
             & .elementos{
