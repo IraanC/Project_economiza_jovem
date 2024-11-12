@@ -71,6 +71,15 @@ nav {
     }
 }
 
+footer {
+    background-color: #528072;
+    color: white;
+    text-align: center;
+}
+
+/* --------------------------------------- */
+/* index.html */
+
 .index{
     gap: 2.5rem;
 }
@@ -262,12 +271,6 @@ nav {
     border-left: 3px solid #649D8C; 
 }
 
-footer {
-    background-color: #528072;
-    color: white;
-    text-align: center;
-}
-
 /* ----------------------------------- */
 /* cursos.html */
 
@@ -291,13 +294,15 @@ footer {
     }
 
     & .imagem_cursos{
-        display: flex;
+        display: block;
         position: relative;
         width: 100%;
-        left: 21%;
 
-        & img{
+        & #coins{
+            display: block;
+            position: relative;
             width: 60%;
+            left: 21%;
         }
 
         & .nome_curso{
@@ -305,7 +310,7 @@ footer {
             width: 58%;
             position: absolute;
             bottom: 3em;
-            left: 1%;
+            left: 22%;
         }
 
         & .elementos_imagem{
@@ -314,7 +319,7 @@ footer {
             justify-content: space-between;
             width: 58%;
             bottom: 0.5em;
-            left: 1%;
+            left: 22%;
 
             & .elementos{
                 display: flex;
@@ -358,7 +363,7 @@ footer {
             position: relative;
             width: 100%;
 
-            & #acessar {
+            & a {
                 border: 2px solid #649D8C;
                 color: #649D8C;
                 text-decoration: none;
@@ -368,14 +373,19 @@ footer {
                 justify-content: center;
                 cursor: pointer;
                 border-radius: 8px;
+                text-align: center;
+                width: 100%;
+                box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+                font-weight: 600;
             }
             
-            & #acessar:hover{
+            & a:hover{
                 background-color: #649D8C;
                 color: white;
                 box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5); 
             }
         }
-        
     }
 }
+
+/* ------------------------------------------ */
