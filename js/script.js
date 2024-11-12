@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /* script.js */
 
 document.addEventListener('DOMContentLoaded', function() {
-    const questions = document.querySelectorAll('.question h3');
+    const questions = document.querySelectorAll('.question div');
 
     questions.forEach(question => {
         question.addEventListener('click', () => {
