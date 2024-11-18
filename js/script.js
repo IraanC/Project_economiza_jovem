@@ -37,7 +37,7 @@ document.getElementById('radio1').checked = true;
 
 setInterval(function(){
     NextImg();
-},5000)
+},5000) // as imagens passam a cada 5seg
 
 function NextImg(){
     count++;
