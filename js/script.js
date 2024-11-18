@@ -37,7 +37,7 @@ document.getElementById('radio1').checked = true;
 
 setInterval(function(){
     NextImg();
-},4000)
+},5000)
 
 function NextImg(){
     count++;
@@ -57,13 +57,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-// setInterval(nextSlide, 5000); // Muda de slide automaticamente a cada 3 segundos
 
-// animação da barra de menus do mobile
-// const menuToggle = document.querySelector('.menu-toggle');
-// const navLinks = document.querySelector('.nav-links');
+const containers = document.querySelectorAll('.img_text');
+containers.forEach(container => {
+    const img = container.querySelector('img');
+    const text = container.querySelector('.text');
 
-// menuToggle.addEventListener('click', () => {
-//     navLinks.classList.toggle('active');
-// });
-// fim animação mob //
+    img.addEventListener('mouseover', () => {
+        text.style.display = 'block';
+    });
+
+    img.addEventListener('mouseout', () => {
+        text.style.display = 'none';
+    });
+});
