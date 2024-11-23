@@ -300,6 +300,7 @@ footer {
 
         & img {
             width: 96px;
+            height: 96px;
             border-radius: 50%;
             cursor: pointer;
             transition: transform 0.3s ease-out;
