@@ -121,6 +121,20 @@ footer {
         & img{
             width: 1000px;
         }
+
+        & p{
+            font-size: 24px;
+        }
+
+        & b{
+            font-size: 32px;
+        }
+
+        & a{
+            color: #649D8C;
+            cursor: pointer;
+            text-decoration: none;
+        }
     }
 
     & .navigation-auto{
