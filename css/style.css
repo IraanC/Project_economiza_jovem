@@ -587,13 +587,7 @@ header{
     height: 2.5rem;
 }
 
-.disciplina{
-    width: 100%;
-    height: auto;
-    display: flex;
-    position: relative;
-    margin-top: 2.5rem;
-    justify-content: center;
+.pag_aulas{
 
     & img{
         width: 60%;
@@ -603,28 +597,59 @@ header{
         display: flex;
         justify-content: center;
         width: 100%;
-        position: absolute;
-        bottom: 50%;
-        
-        & h1{
-            font-size: 2rem; /* 32px */
-            font-family: "Font Awesome 6 Brands Regular";
-        }
+        margin-top: 0.5rem;
     }
-}
 
-.video{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 2.5rem;
+    & .content_section{
+        display: block;
+    }
+
+    & .img_disciplina{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.5rem;
+    }
 
     & iframe{
         width: 60%;
         min-height: 74vh;
     }
+
+    & .button_aulas{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+
+        & button {
+            border: 2px solid #649D8C;
+            color: #649D8C;
+            text-decoration: none;
+            padding: 0.5rem;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 8px;
+            text-align: center;
+            width: 21%;
+            box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+            font-weight: 600;
+        }
+        
+        & button:hover{
+            background-color: #649D8C;
+            color: white;
+            box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5); 
+        }
+    }
 }
 
+
+/*
 .texto_disciplina{
     display: flex;
     justify-content: center;
@@ -715,4 +740,5 @@ header{
     & #conteudo4{
         display: none;
     }
-}
+} */
+
