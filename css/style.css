@@ -87,6 +87,7 @@ footer {
     color: white;
     text-align: center;
     width: 100%;
+    
 }
 
 #footer{
@@ -563,21 +564,12 @@ header{
 /* ----------------------------------- */
 /* contato.html */
 
-.main_contato{
-    gap: 2rem;
-
-    & #titulo_contato{
-        margin-top: 1rem;
-        width: 50%;
-
-        & hr{
-            width: 100%;
-        }
-    }
-
-    & .section_contato{
-        padding: 0rem 3rem 0rem 3rem;
-    }
+footer a{
+    color: black;  /* Cor padrão do ícone */
+    text-decoration: none;  /* Remove o sublinhado */
+    margin-right: 20px;  /* Espaço entre os ícones */
+;  /* Tamanho do ícone */
+    transition: color 0.3s;  /* Transição suave para a cor */
 }
 
 /* ---------------------------------- */
