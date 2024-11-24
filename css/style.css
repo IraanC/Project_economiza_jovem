@@ -83,6 +83,7 @@ nav {
 }
 
 footer {
+    display: block;
     background-color: #528072;
     color: white;
     text-align: center;
@@ -91,8 +92,8 @@ footer {
 }
 
 #footer{
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    top: 100%;
 }
 
 /* --------------------------------------- */
@@ -615,6 +616,7 @@ footer a{
         justify-content: center;
         align-items: center;
         margin-top: 1rem;
+        gap: 1rem;
 
         & button {
             border: 2px solid #649D8C;
@@ -637,6 +639,11 @@ footer a{
             color: white;
             box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5); 
         }
+    }
+
+    & .div_aula_texto{
+        width: 100%;
+        
     }
 }
 
