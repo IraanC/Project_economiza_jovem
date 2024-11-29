@@ -608,10 +608,6 @@ footer{
         margin-top: 2.5rem;
     }
 
-    & iframe{
-        width: 60%;
-        min-height: 74vh;
-    }
 
     & .button_aulas{
         width: 100%;
